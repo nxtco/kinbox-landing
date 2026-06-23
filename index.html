@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kinbox — AI Email Co-Pilot for Agents</title>
+  <title>Kinbox — Inbox for Independent Insurance Agents</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -728,7 +728,7 @@
   <a class="nav-logo" href="#">
     <div class="nav-logo-mark">K</div>
     <span class="nav-wordmark">Kinbox</span>
-    <span class="nav-pill">For Agents</span>
+    <span class="nav-pill">For Insurance Agents</span>
   </a>
   <button class="btn btn-primary" onclick="openTypeform()">Get early access</button>
 </nav>
@@ -739,35 +739,85 @@
 
   <div class="hero-tag">
     <div class="live-dot"></div>
-    AI-powered inbox for agents
+    Built for independent insurance agents
   </div>
 
   <h1 data-pretext>
-    The deals you're losing are<br>
-    <span class="text-gradient">sitting in your inbox.</span>
+    Your inbox, organized by what's<br>
+    <span class="text-gradient">actually happening with each client.</span>
   </h1>
 
   <p class="hero-sub" data-pretext>
-    Kinbox reads every email thread, flags what needs attention, and drafts the perfect follow-up — so you close more and drop nothing.
+    Not just by date. Kinbox tracks every policy conversation, catches renewals before they slip, and drafts the follow-up — so nothing falls through the cracks.
   </p>
 
   <button class="btn btn-primary" style="padding:14px 32px;font-size:16px;" onclick="openTypeform()">Request access</button>
   <p class="hero-sub-note">Free during beta &nbsp;·&nbsp; No credit card needed</p>
 </div>
 
+<!-- ── FEATURE 1: Renewal Reminders & Deadline Tracking ── -->
+<div class="section-wrap">
+  <div class="feat-grid">
+    <div class="feat-text">
+      <div class="section-tag">Renewal reminders · Deadline tracking</div>
+      <h3>Renewals don't sneak up on you anymore.</h3>
+      <p data-pretext>Kinbox watches every policy's renewal date and surfaces it weeks in advance — long before the lapse notice goes out. Reach out while there's still time to shop the account, not after.</p>
+      <ul class="feat-list">
+        <li><div class="check-mark">✓</div> Renewal countdown across every active policy</li>
+        <li><div class="check-mark">✓</div> Reminders surface automatically — no spreadsheet, no sticky notes</li>
+        <li><div class="check-mark">✓</div> Set the lead time that fits your book — 30, 45, or 60 days out</li>
+        <li><div class="check-mark">✓</div> Works alongside your AMS — no migration required</li>
+      </ul>
+    </div>
+    <div class="mock-frame">
+      <div class="mock-titlebar">
+        <div class="traffic-dot" style="background:#ef4444"></div>
+        <div class="traffic-dot" style="background:#f59e0b"></div>
+        <div class="traffic-dot" style="background:#10b981"></div>
+        <span class="mock-window-title">Upcoming Renewals</span>
+      </div>
+      <div style="padding:14px;">
+        <div class="loop-card" style="background:rgba(239,68,68,0.07);border:1px solid rgba(239,68,68,0.2);">
+          <div class="loop-card-header">
+            <span class="loop-card-name">Diaz Family — Auto</span>
+            <span class="badge badge-red">12 days</span>
+          </div>
+          <div class="loop-card-desc">Renews June 4. No outreach sent yet this cycle. Last year's renewal had a premium increase.</div>
+          <div class="loop-card-risk" style="color:var(--red);">⚠ Reach out this week</div>
+        </div>
+        <div class="loop-card" style="background:rgba(180,83,9,0.07);border:1px solid rgba(180,83,9,0.2);">
+          <div class="loop-card-header">
+            <span class="loop-card-name">Sunrise Diner LLC — Commercial</span>
+            <span class="badge badge-amber">28 days</span>
+          </div>
+          <div class="loop-card-desc">Commercial property + liability bundle. Reminder email queued, ready for review.</div>
+          <div class="loop-card-risk" style="color:var(--amber);">Draft reminder ready</div>
+        </div>
+        <div class="loop-card" style="background:rgba(5,150,105,0.07);border:1px solid rgba(5,150,105,0.2);">
+          <div class="loop-card-header">
+            <span class="loop-card-name">Patterson Family — Home + Umbrella</span>
+            <span class="badge badge-green">45 days</span>
+          </div>
+          <div class="loop-card-desc">First reminder already sent. No action needed yet.</div>
+          <div class="loop-card-risk" style="color:var(--green);">On track</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- ── FEATURE 2: Open Loop Detection ── -->
+<!-- ── FEATURE 2: Thread State Tracking ── -->
 <div class="section-alt">
   <div class="section-wrap">
     <div class="feat-grid reverse">
       <div class="feat-text">
-        <div class="section-tag">Open loop detection</div>
-        <h3>Nothing slips through the cracks.</h3>
-        <p data-pretext>Kinbox tracks the state of every conversation — questions asked, commitments made, deadlines mentioned — and flags anything left hanging before it costs you a deal.</p>
+        <div class="section-tag">Thread state tracking</div>
+        <h3>Every conversation, exactly where it stands.</h3>
+        <p data-pretext>Kinbox doesn't just sort by date. It tracks the actual state of each conversation — pending your reply, awaiting theirs, overdue, gone stale, or resolved — so you always know where to look first.</p>
         <ul class="feat-list">
-          <li><div class="check-mark">✓</div> Detects unanswered questions buried in thread history</li>
+          <li><div class="check-mark">✓</div> Five states, assigned automatically to every thread</li>
           <li><div class="check-mark">✓</div> Surfaces time-sensitive threads before the window closes</li>
-          <li><div class="check-mark">✓</div> Prioritizes by urgency and business impact, not just recency</li>
+          <li><div class="check-mark">✓</div> Prioritizes by urgency and impact, not just recency</li>
         </ul>
       </div>
       <div class="mock-frame">
@@ -775,31 +825,31 @@
           <div class="traffic-dot" style="background:#ef4444"></div>
           <div class="traffic-dot" style="background:#f59e0b"></div>
           <div class="traffic-dot" style="background:#10b981"></div>
-          <span class="mock-window-title">Open Loops — 3 need action</span>
+          <span class="mock-window-title">Thread States — 3 need action</span>
         </div>
         <div style="padding:14px;">
           <div class="loop-card" style="background:rgba(239,68,68,0.07);border:1px solid rgba(239,68,68,0.2);">
             <div class="loop-card-header">
               <span class="loop-card-name">Brian Carter</span>
-              <span class="badge badge-red">5 days</span>
+              <span class="badge badge-red">Overdue · 5 days</span>
             </div>
             <div class="loop-card-desc">Asked about the 18% premium increase on Feb 12. No reply sent. Client has mentioned comparing with State Farm.</div>
             <div class="loop-card-risk" style="color:var(--red);">⚠ At risk — client may cancel policy</div>
           </div>
           <div class="loop-card" style="background:rgba(245,158,11,0.07);border:1px solid rgba(245,158,11,0.2);">
             <div class="loop-card-header">
-              <span class="loop-card-name">Marcus &amp; Jen Williams</span>
-              <span class="badge badge-amber">2 hours</span>
+              <span class="loop-card-name">Diaz Family</span>
+              <span class="badge badge-amber">Awaiting you · 2h</span>
             </div>
-            <div class="loop-card-desc">Responded to your counter-offer. Accepted with two conditions on inspection timeline. Waiting for confirmation.</div>
-            <div class="loop-card-risk" style="color:var(--amber);">⏰ Offer window closes tonight at 8 PM</div>
+            <div class="loop-card-desc">Replied to the renewal quote with two questions about the deductible. Renewal binds tonight.</div>
+            <div class="loop-card-risk" style="color:var(--amber);">⏰ Binds tonight at 8 PM</div>
           </div>
           <div class="loop-card" style="background:rgba(99,102,241,0.07);border:1px solid rgba(99,102,241,0.2);">
             <div class="loop-card-header">
-              <span class="loop-card-name">Jake Morrison</span>
-              <span class="badge badge-indigo">3 days</span>
+              <span class="loop-card-name">Marcus Webb</span>
+              <span class="badge badge-indigo">Stale · 3 days</span>
             </div>
-            <div class="loop-card-desc">Asked for a pre-approval status update on Monday. Third follow-up from this client. Draft reply is ready.</div>
+            <div class="loop-card-desc">Asked for a certificate of insurance on Monday. Third follow-up from this client. Draft reply is ready.</div>
             <div class="loop-card-risk" style="color:var(--accent);">Draft prepared</div>
           </div>
         </div>
@@ -814,11 +864,11 @@
     <div class="feat-text">
       <div class="section-tag">Needs attention dashboard · Client context</div>
       <h3>Every client's story, at a glance.</h3>
-      <p data-pretext>Before you reply to anyone, Kinbox shows you the full picture — what they're buying or insuring, where the deal stands, and what you last said to them.</p>
+      <p data-pretext>Before you reply to anyone, Kinbox shows you the full picture — what policy they hold, where the conversation stands, and what you last said to them.</p>
       <ul class="feat-list">
         <li><div class="check-mark">✓</div> Client context summarized from the full email history</li>
-        <li><div class="check-mark">✓</div> Deal stage, budget, and preferences surfaced automatically</li>
-        <li><div class="check-mark">✓</div> No manual CRM entry. No extra tabs. Just Kinbox.</li>
+        <li><div class="check-mark">✓</div> Policy details and prior commitments surfaced automatically</li>
+        <li><div class="check-mark">✓</div> No manual AMS entry. No extra tabs. Just Kinbox.</li>
       </ul>
     </div>
     <div class="mock-frame">
@@ -837,14 +887,14 @@
         </div>
         <div class="dash-card" style="border-color:rgba(245,158,11,0.3);">
           <div class="dash-label">Time-sensitive</div>
-          <div class="dash-client">Williams family</div>
-          <div class="dash-context">Buying 4BR in Elmwood. Budget $680K. Pre-approved. Offer accepted with 2 conditions.</div>
-          <div class="dash-action" style="color:var(--amber);">⏰ Closes tonight 8 PM</div>
+          <div class="dash-client">Diaz Family</div>
+          <div class="dash-context">Auto renewal binds tonight. Asked about deductible options before signing off.</div>
+          <div class="dash-action" style="color:var(--amber);">⏰ Binds tonight 8 PM</div>
         </div>
         <div class="dash-card">
           <div class="dash-label">Pending reply</div>
-          <div class="dash-client">Jake Morrison</div>
-          <div class="dash-context">First-time buyer. Waiting on pre-approval from lender. 3rd follow-up from client.</div>
+          <div class="dash-client">Marcus Webb</div>
+          <div class="dash-context">Small business owner. Needs a certificate of insurance for a new contract. 3rd follow-up from client.</div>
           <div class="dash-action" style="color:var(--accent);">Draft ready to send</div>
         </div>
         <div class="dash-card">
@@ -919,7 +969,7 @@
     <div class="step">
       <div class="step-icon">3</div>
       <h3>You act faster</h3>
-      <p>Open your dashboard each morning. Work through your action list in priority order. Close more deals. Miss nothing.</p>
+      <p>Open your dashboard each morning. Work through your action list in priority order. Stay ahead of renewals. Miss nothing.</p>
     </div>
   </div>
 </div>
@@ -927,8 +977,8 @@
 <!-- ── FINAL CTA ── -->
 <div class="cta-section">
   <div class="section-tag">Early access</div>
-  <h2 data-pretext>Stop leaving deals in your inbox.</h2>
-  <p>Join agents on the waitlist. Free during beta. Cancel anytime.</p>
+  <h2 data-pretext>Stop letting renewals slip through your inbox.</h2>
+  <p>Join independent agents on the waitlist. Free during beta. Cancel anytime.</p>
   <button class="btn btn-primary" style="padding:14px 32px;font-size:16px;" onclick="openTypeform()">Join the waitlist</button>
 </div>
 
@@ -938,7 +988,7 @@
     <div class="nav-logo-mark">K</div>
     <span class="nav-wordmark">Kinbox</span>
   </div>
-  <div class="footer-right">AI-powered inbox for agents &nbsp;·&nbsp; © 2026 Kinbox</div>
+  <div class="footer-right">Built for independent insurance agents &nbsp;·&nbsp; © 2026 Kinbox</div>
 </footer>
 
 <script>
